@@ -1,0 +1,9 @@
+type Query {
+    Ola: String
+    HoraAtual: String
+    HoraAtualEscalar: Date
+    usuarioLogado: Usuario
+    ProdutoVenda: Produto
+    Usuarios: [Usuario]
+    GetUsurario(id: Int): Usuario
+}

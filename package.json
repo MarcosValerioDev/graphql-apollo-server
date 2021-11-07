@@ -1,0 +1,21 @@
+{
+    "name": "api-graphql-sequelize",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon --ext js, graphql"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "apollo-server": "^3.5.0",
+        "graphql": "^16.0.1",
+        "graphql-import": "^1.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.14"
+    }
+}
