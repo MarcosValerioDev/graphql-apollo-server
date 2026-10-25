@@ -1,25 +1,16 @@
-const { usuarios, perfil } = require('../mockDb/mockdb')
-i_d = 20;
+const { users } = require('../mockDb/mockdb')
 
 module.exports = {
-    novoUsuarios(_, { nome, email, idade, perfil_id }) {
-
-        user = {
-            id: 0,
-            nome,
-            email,
-            idade,
-
-            perfil_id
-        }
-        usuarios.push(user)
-        return user
-    },
-    user(_, { nome, email }) {
+    createUser(_, { name, email, age, profileId }) {
+        const nextId = Math.max(0, ...users.map(u => u.id)) + 1
         const user = {
-            nome,
-            email
+            id: nextId,
+            name,
+            email,
+            age,
+            profileId
         }
-        return user;
+        users.push(user)
+        return user
     }
 }

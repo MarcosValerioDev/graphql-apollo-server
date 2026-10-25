@@ -1,38 +1,36 @@
-const { usuarios, perfil } = require('../mockDb/mockdb')
+const { users } = require('../mockDb/mockdb')
 
 module.exports = {
-    Ola() {
-        return "Ola"
+    hello() {
+        return "Hello"
     },
-    HoraAtual() {
+    currentTime() {
         return `${new Date}`
     },
-    HoraAtualEscalar() {
+    currentDate() {
         return new Date
     },
-    usuarioLogado() {
+    loggedUser() {
         return {
             id: 1,
-            nome: "Marcos",
+            name: "Marcos",
             email: "marcos@gmail.com",
-            idade: 30,
-            salarioReal: 5000.00,
+            age: 30,
+            baseSalary: 5000.00,
             vip: true
         }
     },
-    ProdutoVenda() {
+    productOnSale() {
         return {
-            nome: "Prod1",
-            preco: 150.50,
-            desconto: 0
+            name: "Prod1",
+            price: 150.50,
+            discount: 0
         }
     },
-    Usuarios() {
-        return usuarios
+    users() {
+        return users
     },
-    GetUsurario(_, { id }) {
-        const selecionados = usuarios
-            .filter(u => u.id === id)
-        return selecionados ? selecionados[0] : null;
+    user(_, { id }) {
+        return users.find(u => u.id === id) || null
     }
 }

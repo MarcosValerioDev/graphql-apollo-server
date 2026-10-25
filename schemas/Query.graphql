@@ -1,9 +1,9 @@
 type Query {
-    Ola: String
-    HoraAtual: String
-    HoraAtualEscalar: Date
-    usuarioLogado: Usuario
-    ProdutoVenda: Produto
-    Usuarios: [Usuario]
-    GetUsurario(id: Int): Usuario
+    hello: String
+    currentTime: String
+    currentDate: Date
+    loggedUser: User
+    productOnSale: Product
+    users: [User]
+    user(id: Int!): User
 }

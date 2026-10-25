@@ -1,48 +1,48 @@
-const usuarios = [{
+const users = [{
         id: 1,
-        nome: "Marcos Valéiro",
+        name: "Marcos Valério",
         email: "user@gmail.com",
-        idade: 29,
-        perfil_id: 1
+        age: 29,
+        profileId: 1
     },
     {
         id: 2,
-        nome: "Teste User",
-        email: "userTeste@gmail.com",
-        idade: 30,
-        perfil_id: 1
+        name: "Test User",
+        email: "userTest@gmail.com",
+        age: 30,
+        profileId: 1
     },
     {
         id: 3,
-        nome: "Teste User3",
-        email: "userTeste3@gmail.com",
-        idade: 3,
-        perfil_id: 2
+        name: "Test User3",
+        email: "userTest3@gmail.com",
+        age: 3,
+        profileId: 2
     },
     {
         id: 4,
-        nome: "Teste User4",
-        email: "userTeste4@gmail.com",
-        idade: 4,
-        perfil_id: 3
+        name: "Test User4",
+        email: "userTest4@gmail.com",
+        age: 4,
+        profileId: 3
     }
 ]
 
-const perfil = [{
+const profiles = [{
         id: 1,
-        nome: "Adminstrador"
+        name: "Administrator"
     },
     {
         id: 2,
-        nome: "User"
+        name: "User"
     },
     {
         id: 3,
-        nome: "Teste"
+        name: "Test"
     }
 ]
 
 module.exports = {
-    usuarios,
-    perfil
+    users,
+    profiles
 }
